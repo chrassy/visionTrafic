@@ -175,6 +175,10 @@ a{
 	text-decoration: none;
 	background-color: #737373; 
 }
+.vmesneSlike{
+	float: left;
+	
+}
 
 /* ----------------FOOTER--------------------------------*/
 #footer{

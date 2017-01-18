@@ -1,206 +1,325 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">  
-  <link rel="stylesheet" href="css/styles.css">
-  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-  <link rel="icon" href="_slike/PTV_Partner_Logo.png">
-  <link rel="stylesheet" href="_ostalo/font-awesome-4.7.0/css/font-awesome.min.css">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+      <link rel="stylesheet" href="css/styles.css">
+      <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+      <link rel="icon" href="_slike/PTV_Partner_Logo.png">
+      <link rel="stylesheet" href="_ostalo/font-awesome-4.7.0/css/font-awesome.min.css">
+      <title>Vision Traffic</title>
+   </head>
+   <body class="body">
+      <div id="pageContent" class="container">
+         <header id="header" class="">
+            <div>
+               <img  id="headLogo" class="img-responsive" src="_slike/PTV_Partner_Logo.png"  alt="PTV logo" >
+            </div>
+            <div " id="tabMenu">
+               <ul class="nav nav-tabs">
+                  <li class="active">
+                     <a  href="#">Proizvodi</a>
+                  </li>
+                  <li >
+                     <a  href="trening-podrska.html">Trening i podržka </a>
+                  </li>
+               </ul>
+            </div>
+         </header>
+         <!-- /header -->
+         <button id="hamburger" type="button" data-toggle="collapse in" data-target="sideBar1"> <img src="_slike/hamburgerMenu.png" alt="menu" width="42px"> </button>
+         <div class="row">
+            <!-- Sidebar -->
+            <div id="sideNav" class=" hidden-xs col-sm-2  col-lg-2" >
+               <ul id="sideBar1" class="sidebar collapse in panel">
+                  <li class="active">
+                     <a class="classloader" data-toggle="collapse in" data-target="#" data-parent="#sideNav" href="#" id="pregled">Pregled</a>
+                  </li>
+                  <li>
+                     <a class="classloader" data-toggle="collapse" data-target="#visumPodmeni" data-parent="#sideNav" href="#" id="visum">PTV Visum</a>
+                  </li>
+                         <ul id="visumPodmeni" class="collapse">
+                          <li>
+                            <a id="btnPrimeriKoristenja" href="#" data-toggle="collapse" data-parent="#vsebina" data-target="#primejriKoristenja" >Primjeri korištenja</a>
+                          </li>                          
+                          <li>
+                            <a href="#" data-toggle="collapse" data-parent="#vsebina" data-target="#releaseHighlights" >Release highlights</a>
+                          </li>
+                          <li>
+                            <a href="#" data-toggle="collapse" data-parent="#vsebina" data-target="#funkcije" >Funkcije</a>
+                          </li>
+                          <li>
+                            <a href="#" data-toggle="collapse" data-parent="#vsebina" data-target="#probnaVerzija" >Probna verzija</a>
+                          </li>
+                        </ul>   
+                  <li>
+                     <a  class="classloader" data-toggle="collapse" data-target="#visumSafetyPodmeni" data-parent="#sideNav" href="#" id="visumSaftey">PTV Visum Saftey</a>
+                  </li>
+                          <ul id="visumSafetyPodmeni" class="collapse">
+                            <li>
+                            <a href="#">Primjeri korištenja</a>
+                            </li>
+                            <li>
+                            <a href="#">Prednosti</a>
+                            </li>                          
+                          </ul>
+                  <li>
+                     <a class="classloader" data-toggle="collapse" data-target="#vissimPodmeni" data-parent="#sideNav" href="#" id="vissim">PTV Vissim</a>
+                  </li>
+                        <ul id="vissimPodmeni" class="collapse">
+                          <li>
+                          <a href="#">Primjeri korištenja</a>
+                          </li>
+                          <li>
+                          <a href="#">Prednosti</a>
+                          </li>
+                          <li>
+                          <a href="#">Release highlights</a>
+                          </li>
+                           <li>
+                          <a href="#">Probna verzija</a>
+                          </li>
+                        </ul>  
+                  <li>
+                     <a class="classloader" data-toggle="collapse" data-target="#viswalkPodmeni" data-parent="#sideNav" href="#" id="viswalk">PTV Viswalk</a>
+                  </li>   
+                      <ul id="viswalkPodmeni" class="collapse">
+                         <li>
+                          <a href="#">Funkcije</a>
+                          </li>
+                          <li>
+                          <a href="#">Release highlights</a>
+                          </li>
+                           <li>
+                          <a href="#">Probna verzija</a>
+                          </li>
+                      </ul>  
+                  <li>
+                     <a class="classloader" data-toggle="collapse" data-target="#vistroPodmeni" data-parent="#sideNav" href="#" id="vistro">PTV Vistro</a>
+                  </li>
+                      <ul id="vistroPodmeni" class="collapse ">
+                          <li>
+                          <a href="#">Primjeri korištenja</a>
+                          </li>
+                          <li>
+                          <a href="#">Prednosti</a>
+                          </li>
+                          <li>
+                          <a href="#">Release highlights</a>
+                          </li>
+                           <li>
+                          <a href="#">Probna verzija</a>
+                          </li>
+                      </ul>   
+                  <li>
+                     <a class="classloader" data-toggle="collapse" data-target="#optimaPodmeni" data-parent="#sideNav" href="#" id="optima">PTV Optima</a>
+                  </li>
+                        <ul id="optimaPodmeni" class="collapse ">
+                          <li>
+                          <a href="#">Primjeri korištenja</a>
+                          </li>
+                          <li>
+                          <a href="#">Prednosti</a>
+                          </li>
+                        </ul> 
 
-  <title>Vision Traffic</title>
-</head>
-
-<body class="body">
-  <div id="pageContent" class="container">
-     <header id="header" class="">
-      <div>
-       <img  id="headLogo" class="img-responsive" src="_slike/PTV_Partner_Logo.png"  alt="PTV logo" >
-     </div>         
-     <div " id="tabMenu">
-      <ul class="nav nav-tabs">
-        <li class="active">
-          <a  href="#">Proizvodi</a>
-        </li>
-        <li >
-          <a  href="trening-podrska.html">Trening i podržka </a>
-        </li>
-      </ul> 
-     </div>
-    </header><!-- /header -->
-
-    <button id="hamburger" type="button" data-toggle="collapse in" data-target="sideBar1"> <img src="_slike/hamburgerMenu.png" alt="menu" width="42px"> </button>
-    
-  <div class="row">
-      <!-- Sidebar -->
-      <div id="sideNav" class=" hidden-xs col-sm-2  col-lg-2" >
-        <ul id="sideBar1" class="sidebar collapse in">                
-         <li class="active">
-          <a href="#">Pregled</a>
-        </li>                    
-        <li>
-          <a href="proizvodi/ptv-visum.html">PTV Visum</a>
-        </li>     
-
-        <li>
-          <a href="proizvodi/ptv-visum-safety.html">PTV Visum Saftey</a>
-        </li>
-        <li>
-          <a href="proizvodi/ptv-vissim.html">PTV Vissim</a>
-        </li>               
-        <li>
-          <a href="proizvodi/ptv-viswalk.html">PTV Viswalk</a>
-        </li> 
-        <li>
-          <a href="proizvodi/ptv-vistro.html">PTV Vistro</a>
-        </li>
-        <li>
-          <a href="proizvodi/ptv-optima.html">PTV Optima</a>
-        </li>                
-        <li>
-          <a href="proizvodi/ptv-balance.html">PTV Balance</a>
-        </li>
-        <li>
-          <a href="proizvodi/ptv-epics.html">PTV Epics</a>
-        </li>
-        <li>
-          <a href="proizvodi/ptv-vistad.html">PTV Vistad</a>
-        </li>
-        <li>
-          <a href="proizvodi/ptv-visum-data-analytics.html">PTV Visum data Analytics</a>
-        </li>
-        <li>
-          <a href="proizvodi/traffic-data.html">Traffic data</a>
-        </li>
-      </ul>
-    </div><!--/sidebar -->
-
-    <div class="col-sm-9">
-    <h1 class="glavniNaslov">Proizvodi</h1>
-    <div class="paragraph">
-    <p class="bodytext">Vizija Promet Suite je svjetski standard u software-based prometnog planiranja, prometa inženjering i prometne simulacije. </p>
-    <br>
-    <p class="bodytext">Razina integracije i kompatibilnost naših proizvoda je neprevaziđen, budući da je vizija prometa Suite pokriva cijeli spektar prometnog planiranja - od strateškog planiranja i prometno inženjerstvo za vozila i pješake simulacija.</p>
-    <br>
-    <p class="bodytext">Tražite softver za simulacije pješaca? Pogledajte ovo: <a href="proizvodi/ptv-viswalk.html" target="_top" class="internal-link">PTV Viswalk</a>
-    </div>
-    </div> <!-- /col --> 
-    <!-- Tabela -->
-    <div id="tabela"  class=" hidden-xs col-sm-10 col-sm-9 col-md-9 col-md-9" > 
-        <section>
-      <h1>PTV Proizvodi</h1>
-      <div class="tbl-header">
-        <table cellpadding="0" cellspacing="0" border="0">
-          <thead>
-            <tr class="naslovnaVrsticaTabele">
-              <th class="nasloviTabele">Funkcije</td>
-                <th class="nasloviTabele">PTV Visum</td>
-                  <th class="nasloviTabele">PTV Vistro</td>
-                    <th class="nasloviTabele">PTV Vissim</td>
-                    </tr>
-                  </thead>
-                </table>
-              </div>
-              <div class="tbl-content">
-                <table cellpadding="0" cellspacing="0" border="0">
-                  <tbody>                    
-                      <tr class="tabelaOpisni">
-                        <td>Inštalacija</td>
-                        <td class="sredinskaPoravnava">DVD, Downlaod</td>
-                        <td class="sredinskaPoravnava">DVD, Downlaod</td>
-                        <td class="sredinskaPoravnava">DVD, Downlaod</td>
-                      </tr>
-                      <tr class="tabelaOpisni">
-                        <td>Language</td>
-                        <td class="sredinskaPoravnava">EN, ES, DE, FR i 9 ostalih </td>
-                        <td class="sredinskaPoravnava">EN</td>
-                        <td class="sredinskaPoravnava">EN, ES, DE, FR i 5 ostalih</td>
-                      </tr>
-                      <tr class="tabelaOpisni">
-                        <td class="tableBreak">Nivo planiranja</td>
-                        <td class="tableBreak sredinskaPoravnava">Macroscopic/Mesoscopic</td>
-                        <td class="tableBreak sredinskaPoravnava">Macroscopic/Mesoscopic</td>
-                        <td class="tableBreak sredinskaPoravnava">Macroscopic/Mesoscopic</td>
-                      </tr>                    
-                    <tr>
-                      <td>Razvoj multimodalne mreže</td>
-                      <td><i class="fa fa-check" aria-hidden="true"></i></td>
-                      <td></td>
-                      <td><i class="fa fa-check" aria-hidden="true"></i></td>
-                    </tr>
-                    <tr>
-                      <td>Uvoz i izvoz mrežnih podatka</td>
-                      <td><i class="fa fa-check" aria-hidden="true"></i></td>
-                      <td><i class="fa fa-check" aria-hidden="true"></i></td>
-                      <td><i class="fa fa-check" aria-hidden="true"></i></td>
-                    </tr>
-                    <tr>
-                      <td>Realno modeliranje geometrije trake i pozicije mreže elemenata na bilo kojem nivoju detalja</td>
-                      <td><i class="fa fa-check" aria-hidden="true"></i></td>
-                      <td><i class="fa fa-check" aria-hidden="true"></i></td>
-                      <td><i class="fa fa-check" aria-hidden="true"></i></td>
-                    </tr>
-                    <tr>
-                      <td>Analiza prometa</td>
-                      <td><i class="fa fa-check" aria-hidden="true"></i></td>
-                      <td><i class="fa fa-check" aria-hidden="true"></i></td>
-                      <td><i class="fa fa-check" aria-hidden="true"></i></td>
-                    </tr>
-                    <tr>
-                      <td>Izračun emisija</td>
-                      <td><i class="fa fa-check" aria-hidden="true"></i></td>
-                      <td></td>
-                      <td><i class="fa fa-check" aria-hidden="true"></i></td>
-                    </tr>
-                    <tr>
-                      <td>Usporedba varijant planiranja</td>
-                      <td><i class="fa fa-check" aria-hidden="true"></i></td>
-                      <td><i class="fa fa-check" aria-hidden="true"></i></td>
-                      <td><i class="fa fa-check" aria-hidden="true"></i></td>
-                    </tr>
-                    <tr>
-                      <td>Statička optimizacija signala</td>
-                      <td><i class="fa fa-check" aria-hidden="true"></i></td>
-                      <td><i class="fa fa-check" aria-hidden="true"></i></td>
-                      <td><i class="fa fa-check" aria-hidden="true"></i></td>
-                    </tr>
-                    <tr>
-                      <td>Stvarjanje izvješća</td>
-                      <td><i class="fa fa-check" aria-hidden="true"></i></td>
-                      <td><i class="fa fa-check" aria-hidden="true"></i></td>
-                      <td></td>
-                    </tr>
-                    <tr>
-                      <td>Mikroskopska simulacija prometa(2D/3D)</td>
-                      <td></td>
-                      <td></td>
-                      <td><i class="fa fa-check" aria-hidden="true"></i></td>
-                    </tr>
-                  </tbody>
-                </table>                
-              </section>
-               <div class="table-footer">
-               Svi izdelki su kompatibilni i inetgrirani u PTV Traffic software familju.
-              </div>
-            </div><!-- /tabela -->            
-             
-
-
-         </div> <!-- Row -->
-
-
+                  <li>
+                     <a class="classloader" data-toggle="collapse" data-target="#balancePodmeni" data-parent="#sideNav" href="#" id="balance">PTV Balance</a>
+                  </li>
+                      <ul id="balancePodmeni" class="collapse ">
+                          <li>
+                          <a href="#">Trenutno stanje prometa</a>
+                          </li>
+                          <li>
+                          <a href="#">Prednosti</a>
+                          </li>
+                      </ul> 
+                  <li>
+                     <a class="classloader" data-toggle="collapse" data-target="#epicsPodmeni" data-parent="#sideNav" href="#" id="epics">PTV Epics</a>
+                  </li>
+                        <ul id="epicsPodmeni" class="collapse">
+                          <li>
+                          <a href="#">Trenutno stanje prometa</a>
+                          </li>
+                          <li>
+                          <a href="#">Prednosti</a>
+                          </li>
+                      </ul> 
+                  <li>
+                     <a class="classloader" data-toggle="collapse" data-target="#vistadPodmeni" data-parent="#sideNav" href="#" id="vistad">PTV Vistad</a>
+                  </li>
+                        <ul id="vistadPodmeni" class="collapse">
+                          <li>
+                          <a href="#">Primjeri korištenja</a>
+                          </li>
+                          <li>
+                          <a href="#">Prednosti</a>
+                          </li>                         
+                      </ul> 
+                  <li>
+                     <a class="classloader" data-toggle="collapse" data-target="#dataAnalyticsPodmeni" data-parent="#sideNav" href="#" id="dataAnalytics">PTV Visum data Analytics</a>
+                  </li>
+                      <ul id="dataAnalyticsPodmeni" class="collapse ">
+                          <li>
+                          <a href="#">Primjeri korištenja</a>
+                          </li>
+                          <li>
+                          <a href="#">Prednosti</a>
+                          </li>
+                          <li>
+                          <a href="#">Funkcionalnost</a>
+                          </li>                          
+                      </ul>
+                  <li>
+                     <a class="classloader" data-toggle="collapse" data-target="#trafficDataPodmeni" data-parent="#sideNav" href="#" id="trafficData"> Traffic data</a>
+                  </li>
+                        <ul id="trafficDataPodmeni" class="collapse">
+                        <li>
+                          <a class="clicked" href="#" data-toggle="collapse" data-parent="#vsebina" data-target="#podaciKarta">Podaci karta</a>
+                        </li>                          
+                        <li>
+                          <a class="clicked" href="#" data-toggle="collapse" data-parent="#vsebina" data-target="#prijevozniModel" >Prijevozni modeli</a>
+                        </li>
+                        <li>
+                          <a class="clicked" href="#" data-toggle="collapse" data-parent="#vsebina" data-target="#podaciBrzina" >Povijesni podaci o brzini</a>
+                        </li>
+                        <li>
+                          <a class="clicked" href="#" data-toggle="collapse" data-parent="#vsebina" data-target="#podaciZivo" >Podaci u živo</a>
+                        </li>
+                      </ul>
+               </ul>
+            </div>
+            <!--/sidebar -->
+            <div class="spremembaVsebine">
+               <div class="col-sm-9">
+                  <h1 class="glavniNaslov">Proizvodi</h1>
+                  <div class="paragraph">
+                     <p class="bodytext">Vizija Promet Suite je svjetski standard u software-based prometnog planiranja, prometa inženjering i prometne simulacije. </p>
+                     <br>
+                     <p class="bodytext">Razina integracije i kompatibilnost naših proizvoda je neprevaziđen, budući da je vizija prometa Suite pokriva cijeli spektar prometnog planiranja - od strateškog planiranja i prometno inženjerstvo za vozila i pješake simulacija.</p>
+                     <br>
+                     <p class="bodytext">Tražite softver za simulacije pješaca? Pogledajte ovo: <a href="proizvodi/ptv-viswalk.html" target="_top" class="internal-link">PTV Viswalk</a>
+                  </div>
+               </div>
+               <!-- /col --> 
+               <!-- Tabela -->
+               <div id="tabela"  class=" hidden-xs col-sm-10 col-sm-9 col-md-9 col-md-9" >
+                  <section>
+                     <h1>PTV Proizvodi</h1>
+                     <div class="tbl-header">
+                        <table cellpadding="0" cellspacing="0" border="0">
+                           <thead>
+                              <tr class="naslovnaVrsticaTabele">
+                                 <th class="nasloviTabele">Funkcije</td>
+                                 <th class="nasloviTabele">PTV Visum</td>
+                                 <th class="nasloviTabele">PTV Vistro</td>
+                                 <th class="nasloviTabele">PTV Vissim</td>
+                              </tr>
+                           </thead>
+                        </table>
+                     </div>
+                     <div class="tbl-content">
+                        <table cellpadding="0" cellspacing="0" border="0">
+                           <tbody>
+                              <tr class="tabelaOpisni">
+                                 <td>Inštalacija</td>
+                                 <td class="sredinskaPoravnava">DVD, Downlaod</td>
+                                 <td class="sredinskaPoravnava">DVD, Downlaod</td>
+                                 <td class="sredinskaPoravnava">DVD, Downlaod</td>
+                              </tr>
+                              <tr class="tabelaOpisni">
+                                 <td>Language</td>
+                                 <td class="sredinskaPoravnava">EN, ES, DE, FR i 9 ostalih </td>
+                                 <td class="sredinskaPoravnava">EN</td>
+                                 <td class="sredinskaPoravnava">EN, ES, DE, FR i 5 ostalih</td>
+                              </tr>
+                              <tr class="tabelaOpisni">
+                                 <td class="tableBreak">Nivo planiranja</td>
+                                 <td class="tableBreak sredinskaPoravnava">Macroscopic/Mesoscopic</td>
+                                 <td class="tableBreak sredinskaPoravnava">Macroscopic/Mesoscopic</td>
+                                 <td class="tableBreak sredinskaPoravnava">Macroscopic/Mesoscopic</td>
+                              </tr>
+                              <tr>
+                                 <td>Razvoj multimodalne mreže</td>
+                                 <td><i class="fa fa-check" aria-hidden="true"></i></td>
+                                 <td></td>
+                                 <td><i class="fa fa-check" aria-hidden="true"></i></td>
+                              </tr>
+                              <tr>
+                                 <td>Uvoz i izvoz mrežnih podatka</td>
+                                 <td><i class="fa fa-check" aria-hidden="true"></i></td>
+                                 <td><i class="fa fa-check" aria-hidden="true"></i></td>
+                                 <td><i class="fa fa-check" aria-hidden="true"></i></td>
+                              </tr>
+                              <tr>
+                                 <td>Realno modeliranje geometrije trake i pozicije mreže elemenata na bilo kojem nivoju detalja</td>
+                                 <td><i class="fa fa-check" aria-hidden="true"></i></td>
+                                 <td><i class="fa fa-check" aria-hidden="true"></i></td>
+                                 <td><i class="fa fa-check" aria-hidden="true"></i></td>
+                              </tr>
+                              <tr>
+                                 <td>Analiza prometa</td>
+                                 <td><i class="fa fa-check" aria-hidden="true"></i></td>
+                                 <td><i class="fa fa-check" aria-hidden="true"></i></td>
+                                 <td><i class="fa fa-check" aria-hidden="true"></i></td>
+                              </tr>
+                              <tr>
+                                 <td>Izračun emisija</td>
+                                 <td><i class="fa fa-check" aria-hidden="true"></i></td>
+                                 <td></td>
+                                 <td><i class="fa fa-check" aria-hidden="true"></i></td>
+                              </tr>
+                              <tr>
+                                 <td>Usporedba varijant planiranja</td>
+                                 <td><i class="fa fa-check" aria-hidden="true"></i></td>
+                                 <td><i class="fa fa-check" aria-hidden="true"></i></td>
+                                 <td><i class="fa fa-check" aria-hidden="true"></i></td>
+                              </tr>
+                              <tr>
+                                 <td>Statička optimizacija signala</td>
+                                 <td><i class="fa fa-check" aria-hidden="true"></i></td>
+                                 <td><i class="fa fa-check" aria-hidden="true"></i></td>
+                                 <td><i class="fa fa-check" aria-hidden="true"></i></td>
+                              </tr>
+                              <tr>
+                                 <td>Stvarjanje izvješća</td>
+                                 <td><i class="fa fa-check" aria-hidden="true"></i></td>
+                                 <td><i class="fa fa-check" aria-hidden="true"></i></td>
+                                 <td></td>
+                              </tr>
+                              <tr>
+                                 <td>Mikroskopska simulacija prometa(2D/3D)</td>
+                                 <td></td>
+                                 <td></td>
+                                 <td><i class="fa fa-check" aria-hidden="true"></i></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </div>
+                     <!-- /tbl-content -->               
+                  </section>
+                  <div class="table-footer">
+                     Svi izdelki su kompatibilni i inetgrirani u PTV Traffic software familju.
+                  </div>
+               </div>
+               <!-- /tabela -->            
+            </div>
+            <!-- /spremembaVsebine -->
+         </div>
+         <!-- /Row -->
+         <div class="testVsebine">
+           
+         </div>
          <footer id="footer">
-          PTV Partner            
-          <a href="http://www.appia.si" target="_blank">Appia</a> 
-        </footer>
-
-        
-      </div> <!-- Page content -->
-
+            PTV Partner            
+            <a href="http://www.appia.si" target="_blank">Appia</a> 
+         </footer>
+      </div>
+      <!-- Page content -->
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
       <script src="js/script.js"></script>
-    </body>
-    </html>
+   </body>
+</html>
