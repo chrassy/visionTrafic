@@ -17,7 +17,7 @@ $(function(){
 
 
 
-//Obarvan trenutni podmeni
+//Obarvan trenutni podmeni in meni
 
 $(function() {  
 $('.clicked').click(function(){
@@ -27,6 +27,13 @@ $('.clicked').click(function(){
   });
 });
 
+$(function() {  
+$('.classloader').click(function(){
+	$('.clicked').css('color', '#4B4A4D');
+	$('.classloader').css('color', '#4B4A4D');
+    $(this).css('color', '#E02129');
 
-//alway keep one sidebar open
+  });
+});
 
+//alway keep one  element insidebar open
