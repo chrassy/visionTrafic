@@ -9,6 +9,7 @@
       <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
       <link rel="icon" href="_slike/PTV_Partner_Logo.png">
       <link rel="stylesheet" href="_ostalo/font-awesome-4.7.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
       <title>Vision Traffic</title>
    </head>
    <body class="body">
@@ -29,16 +30,17 @@
             </div>
          </header>
          <!-- /header -->
-         <button id="hamburger" type="button" data-toggle="collapse in" data-target="sideBar1"> <img src="_slike/hamburgerMenu.png" alt="menu" width="42px"> </button>
+         <button  id="hamburger" type="button"> <img src="_slike/hamburgerMenu.png" alt="menu" width="50px">  </button>
          <div class="row">
             <!-- Sidebar -->
-            <div id="sideNav" class=" hidden-xs col-sm-2  col-lg-2" >
+            <div id="sideNav" class="col-sm-2  col-lg-2" >
                <ul id="sideBar1" class="sidebar collapse in panel">
                   <li class="active">
                      <a class="classloader" data-toggle="collapse" data-target="#blank" data-parent="#sideNav" href="#" id="pregled">Pregled</a>                     
                   </li>
-                       <ul id="blank" class="collapse">                        
-                      </ul>
+                           <ul id="blank" class="collapse in">
+                           <li></li>                     
+                          </ul>
                   <li>
                      <a class="classloader" data-toggle="collapse" data-target="#visumPodmeni" data-parent="#sideNav" href="#" id="visum">PTV Visum</a>
                   </li>
@@ -315,12 +317,12 @@
            
          </div>
          <footer id="footer">
-            PTV Partner            
-            <a href="http://www.appia.si" target="_blank">Appia</a> 
+            <span>PTV Partner            
+            <a href="http://www.appia.si" target="_blank">Appia</a></span> 
          </footer>
       </div>
       <!-- Page content -->
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
       <script src="js/script.js"></script>
    </body>
