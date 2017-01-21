@@ -69,6 +69,7 @@ a:hover{
 	margin: 1%;
     padding: 0;
     float: left;
+    z-index: 1000;
 } 
 .sidebar{
 	margin: 0;
@@ -138,7 +139,8 @@ a:hover{
 .glavniNaslov , .podNaslov{
 	text-align: left;
     color: #E02129;
-}
+    
+  }
  #vsebina .podnaslov{
 	padding-left: 1em;
 }

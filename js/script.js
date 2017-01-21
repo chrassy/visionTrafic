@@ -80,7 +80,7 @@ $(window).resize(function() {
 // toggle sideNav with menu btn, width 80%
 $(function() {  
 $('#hamburger').click(function(){
-    $("#sideNav").css("width","65%");
+    $("#sideNav").css("width","100%");
 	$("#sideNav").slideToggle(1000);
   });
 });
