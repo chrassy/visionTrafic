@@ -27,7 +27,7 @@ html, body {
     border:  solid 1px;
     border-top: none;
     box-shadow:  5px 5px 2.5px #888888;
-    overflow: auto;   
+     
 
 }
 
@@ -205,6 +205,9 @@ a:hover{
   max-width: 400px;
 }
 
+#ptvVideo{
+  margin: 2em;  
+}
 /* ----------------FOOTER--------------------------------*/
 #footer{
 	clear: both;
