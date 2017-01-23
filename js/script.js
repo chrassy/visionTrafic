@@ -2,12 +2,25 @@
 //alway keep one  element in sidebar open
 $('.classloader').on('click',function(e){	
 	if($(this).hasClass("open")){
-    	e.stopPropagation();
+    	e.stopPropagation(); 
+      $(".clicked.open").removeClass("open");     
     }
 	
     else {    	
-    	$(".open").removeClass("open");
-    	$(this).addClass("open");
+    	 $(".open").removeClass("open");
+        $(this).addClass("open");
+    }
+    
+});
+
+$('.clicked').on('click',function(e){ 
+  if($(this).hasClass("open")){
+       e.stopPropagation();    
+    }
+  
+    else {      
+       $(".clicked.open").removeClass("open");
+        $(this).addClass("open");
     }
     
 });
@@ -39,8 +52,8 @@ $(function(){
 $(function() {  
 $('.clicked').click(function(){
 	$('.clicked').css('color', '#4B4A4D');
-    $(this).css('color', '#E02129');
-
+    $(this).css('color', '#E02129');   
+    $(this).addClass("open");
   });
 });
 
