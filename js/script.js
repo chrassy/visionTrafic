@@ -29,21 +29,23 @@ $('.clicked').on('click',function(e){
 $(function(){
   $(".classloader").click(function(){
   	if ($(this).attr('id') == "pregled") {
-    	$(".spremembaVsebine").load("pregled.html");
-    	
+    	$(".spremembaVsebine").load("pregled.html");    	
      }
   	else if ($(this).attr('id') == "visum") {
-    	$(".spremembaVsebine").load("visum.html");
-    	
+    	$(".spremembaVsebine").load("visum.html");    	
      }
      else if ($(this).attr('id') == "dataAnalytics") {
-     	$(".spremembaVsebine").load("visum-data-analytics.html");
-     	
+     	$(".spremembaVsebine").load("visum-data-analytics.html");     	
      }  
      else if ($(this).attr('id') == "trafficData") {
-     	$(".spremembaVsebine").load("trafficData.html");
-     	
-     }     
+     	$(".spremembaVsebine").load("trafficData.html");     	
+     }
+     else if ($(this).attr('id') == "trening") {
+      $(".spremembaVsebine").load("trening.html");      
+     }
+     else if ($(this).attr('id') == "podrzka") {
+      $(".spremembaVsebine").load("podrzka.html");      
+     }            
   });
 });
 
@@ -93,7 +95,7 @@ $(window).resize(function() {
 // toggle sideNav with menu btn, width 80%
 $(function() {  
 $('#hamburger').click(function(){
-    $("#sideNav").css("width","100%");
-	$("#sideNav").slideToggle(1000);
+    $("#sideNav").css("width","80%");
+	$("#sideNav").slideToggle(750);
   });
 });
