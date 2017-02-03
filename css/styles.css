@@ -222,7 +222,7 @@ a:hover{
 /* ----------------FOOTER--------------------------------*/
 #footer{
 	position: absolute;
-	height: 3.5%;
+	height: 3em;
 	width: 100%;  
 	padding-top: 0.5%;
   text-align: right;
