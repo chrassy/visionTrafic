@@ -114,12 +114,12 @@ a:hover{
 /* ----------------HEADER--------------------------------*/
 #tabMenu a {
     color: #4B4A4D;
-    font-weight: bold;	
+    font-weight: bold;
+    
 }
 #tabMenu ul .active a{	
 	color: #E02129;
 }
-
 
 #header{
 	margin: 0;
@@ -127,21 +127,31 @@ a:hover{
 	border-top:  10px solid #E02129
 	
 }
-
+#appiaHeadLogo{
+ padding-top: 4px;
+ max-width: 250px; 
+ float: left;   
+}
 #headLogo{
-	padding-top: 4px;	
-	display: block;
-    margin-left: auto;
-    margin-right: auto 
-
-
+  padding-top: 4px;	  
+  max-width: 250px;
+  float: left; 
+}
+#ytLogo{
+  float: right;
+  max-width: 50px; 
+  margin-right: 1%; 
 }
 /* ----------------CONTENT--------------------------------*/
 .glavniNaslov , .podNaslov{
 	text-align: left;
-    color: #E02129;
-    
+    color: #E02129;      
   }
+.domaciNaslov{
+    color: #E02129;
+    font-size: 2em;
+    margin-top: 0; 
+ }
  #vsebina .podnaslov{
 	padding-left: 1em;
 }
@@ -160,6 +170,9 @@ a:hover{
 .row{
 	margin: 0;
 }
+#headerLogos{
+  margin-bottom: 1em;
+}
 .container{
 	margin: 0;
 	overflow: none;
@@ -174,19 +187,25 @@ a:hover{
 	margin-top: 5em;
 	padding: 0.5em;
 }
+#pdfjiDoma{
+  background-color:#E8E9EB; 
+  font-size:1em;
+  margin-top: 1em;
+  padding: 0.5em;
+}
 .pdf{
 	padding: 0.5em;
 }
 #mail{
 	background-color:#E02129;
 	color: white;
-	margin: 1em;
+	margin-top: 1em;
 	vertical-align: center;
 }
 #mail {
 	color: white;
-	padding: 0.5em;
-	display: block;
+	padding: 0.5em;  
+  display: block;
 	text-align: center;
 	}
 
@@ -194,6 +213,10 @@ a:hover{
 	text-decoration: none;
 	background-color: #737373; 
 }
+#demoVerzija #mail:hover{
+  text-decoration: none;
+  background-color: #737373;
+ }  
 .vmesneSlike{
 	float: left;
 	
@@ -201,28 +224,130 @@ a:hover{
 
 .infoBox{
   background-color:#E8E9EB;
-  margin-top: 0.5em; 
+  margin: 1em; 
   padding: 0.5em;
-  max-width: 400px;
 }
+#distributer{
+  margin-top: 2%;
+  margin-left: 0;
+  margin-bottom: 0;
 
+}
 #ptvVideo{
-  margin: 2em;  
+  margin: 1em;
+  margin-left: 2em;
+  padding: 0;  
 }
-@media screen and (min-width: 768px) {
-    #ptvVideo {
-      
-      margin-left: 22%;
-    }
-}
-
 .row{
   margin-bottom: 2em;
 }
+
+#myCarousel .carousel-control{
+  background-image: none;
+}
+.carousel-caption{
+  padding: 0.5em;
+  margin-bottom: 30px;
+  background-color: #737373;
+}
+.carousel-indicators{
+  bottom: 0.5em;
+}
+#kontaktDistributerjaNaslov{  
+  color: #E02129;
+}
+#kontaktirajteNas{
+  padding: 0;
+}
+#demoVerzija{
+  padding: 0;
+}
+#demoVerzija #mail{
+  background-color:#1a8cff;
+}
+#domaDrugaVrsta{
+  margin: 2%;
+  margin-top: 0;
+}
+#smallLogo{
+  float:  right;
+  margin: 0.2em;
+  width: 40px;
+  margin-top: 0;
+}
+.domaInfo{
+  margin-top: 2%;
+  margin-left: 0;
+  margin-bottom: 0;
+  height: 11em;
+  float: left;
+  padding: 0;
+  width: 47.5%;
+  margin-right: 2.5%;
+}
+#caption1, #caption2{
+  color: white;
+  text-decoration: none;
+}
+.infoText{
+  margin: 0.5em;
+}
+#domaDrugaVrsta{
+
+}
+#myCarousel{
+  margin: 2%; 
+}
+#asideMain{
+  float: right;
+  margin: 1%;
+}
+/* ----------------HOMEPAGE RESPONSIVE--------------------------------*/
+@media screen and (min-width: 960px) {
+  #myCarousel{
+    float: left;
+  }
+   #distributer{
+    float: left;    
+  }
+}
+@media screen and (min-width: 1600px) {
+    #ptvVideo{
+      margin: 0;
+      margin-top: 1em;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .domaInfo {width: 90%;
+               margin: 5%;  
+    }
+    #kontaktirajteNas{width: 90%;
+               margin: 5%;
+    }
+    #demoVerzija{width: 90%;
+               margin: 5%;
+    }
+    #pdfjiDoma{width: 90%;
+               margin: 5%;
+    }
+    #distributer{width: 90%;
+               margin: 5%;      
+    }
+    #ptvVideo{width: 90%;
+               margin: 5%;       
+    }
+    .carousel-caption{
+      display: none;
+    }
+}
+
+
+
 /* ----------------FOOTER--------------------------------*/
 #footer{
 	position: absolute;
-	height: 3em;
+	height: 2em;
 	width: 100%;  
 	padding-top: 0.5%;
   text-align: right;

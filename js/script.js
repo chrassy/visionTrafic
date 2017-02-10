@@ -28,11 +28,15 @@ $('.clicked').on('click',function(e){
 //AJAX za context
 $(function(){
   $(".classloader").click(function(){
-  	if ($(this).attr('id') == "pregled") {
+  	 if ($(this).attr('id') == "pregled") {
     	$(".spremembaVsebine").load("pregled.html");    	
      }
-  	else if ($(this).attr('id') == "visum") {
+  	 else if ($(this).attr('id') == "visum2") {
+      $(".body").load("proizvodi.html");
     	$(".spremembaVsebine").load("visum.html");    	
+     }
+     else if ($(this).attr('id') == "visum") {
+      $(".spremembaVsebine").load("visum.html");      
      }
      else if ($(this).attr('id') == "dataAnalytics") {
      	$(".spremembaVsebine").load("visum-data-analytics.html");     	
