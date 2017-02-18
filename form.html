@@ -1,0 +1,92 @@
+<?php 
+if(isset($_POST['submit'])){
+    $to = "aljaz.klanecek@gmail.com"; // this is your Email address
+    $from = $_POST['email']; // this is the sender's Email address
+    $first_name = $_POST['first_name'];
+    $last_name = $_POST['last_name'];
+    $subject = "Form submission";
+    $subject2 = "Copy of your form submission";
+    $message = $first_name . " " . $last_name . " wrote the following:" . "\n\n" . $_POST['message'];
+    $message2 = "Here is a copy of your message " . $first_name . "\n\n" . $_POST['message'];
+
+    $headers = "From:" . $from;
+    $headers2 = "From:" . $to;
+    mail($to,$subject,$message,$headers);
+       }
+?>
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link rel="icon" href="_slike/PTV_Partner_Logo.png">
+  <link rel="stylesheet" href="_ostalo/font-awesome-4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <title>Vision Traffic</title>
+</head>
+
+<body class="body">
+  <div id="pageContent" class="container">
+   <header id="header" class="">
+   <div class="row" id="headerLogos">
+      <div class="col-sm-3">
+          <a href="http://www.appia.si/" target="_blank"><img  id="appiaHeadLogo" class="img-responsive" src="_slike/appiaLogo.jpg"  alt="Appia logo" ></a>       
+      </div>
+      <div class="col-sm-offset-2 col-sm-3">         
+          <img  id="headLogo" class="img-responsive" src="_slike/PTV_Partner_Logo.png"  alt="PTV logo" >  
+      </div>
+          <a target="_blank" href="https://www.youtube.com/channel/UCiioH25tZ_w447aGN9fRb0g"><img  id="ytLogo" class="img-responsive"  src="_slike/youtube-128.png"  alt="youtube logo" ></a>  
+    </div>
+     
+   
+   <div " id="tabMenu">
+     <ul class="nav nav-tabs">
+      <li>
+       <a  href="index.html">Doma</a>
+     </li>
+     <li>
+       <a  href="proizvodi.html">Proizvodi</a>
+     </li>
+     <li >
+       <a  href="trening-podrska.html">Trening i podržka </a>
+     </li>
+     <li >
+       <a  href="kontakt.html">Kontakt </a>
+     </li>
+   </ul>
+ </div>
+</header>
+<!-- /header -->
+
+<!-- Row -->
+<div>
+  <form action="" method="post">
+    First Name: <input type="text" name="first_name"><br>
+    Last Name: <input type="text" name="last_name"><br>
+    Email: <input type="text" name="email"><br>
+    Message:<br><textarea rows="5" name="message" cols="30"></textarea><br>
+    <input type="submit" name="submit" value="Submit">
+  </form>
+</div>
+<!-- /Row -->
+
+<footer id="footer">
+  <span>PTV Partner            
+    <a href="http://www.appia.si" target="_blank">Appia</a></span> 
+    <img id="smallLogo" src="_slike/appia-logo-red.png" >
+  </footer>
+</div>
+<!-- Page content -->
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
