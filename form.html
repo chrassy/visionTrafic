@@ -67,14 +67,27 @@ if(isset($_POST['submit'])){
 <!-- /header -->
 
 <!-- Row -->
-<div>
-  <form action="" method="post">
-    First Name: <input type="text" name="first_name"><br>
-    Last Name: <input type="text" name="last_name"><br>
-    Email: <input type="text" name="email"><br>
-    Message:<br><textarea rows="5" name="message" cols="30"></textarea><br>
-    <input type="submit" name="submit" value="Submit">
-  </form>
+<div class="row">
+  <div class="col-sm-7">
+   <h1 class="glavniNaslov">Naručite Demo verziju </h1>
+      <div id="form">
+        <form action="" method="post">
+           <div id="formOpis">
+             Ime:<br>
+             Prezime:<br>
+             Email:<br>
+             Poruka:<br>
+           </div>
+           <div id="formFields">
+           <input type="text" name="first_name"><br>
+           <input type="text" name="last_name"><br>
+           <input type="text" name="email"><br>
+           <br><textarea rows="5" name="message" cols="30"></textarea><br>
+           </div>
+          <input type="submit" name="oddaj" value="Submit">
+        </form>
+    </div>
+   </div>
 </div>
 <!-- /Row -->
 

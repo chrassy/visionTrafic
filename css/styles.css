@@ -161,7 +161,7 @@ a:hover{
 }
 
 .bodytext{
-	text-align: justify;	
+		
 }
 
 .internal-link{
@@ -200,7 +200,9 @@ a:hover{
 	background-color:#E02129;
 	color: white;
 	margin-top: 1em;
+  padding: 0.2em;
 	vertical-align: center;
+  font-size: 0.8em;
 }
 #mail {
 	color: white;
@@ -224,7 +226,6 @@ a:hover{
 
 .infoBox{
   background-color:#E8E9EB;
-  margin: 1em; 
   padding: 0.5em;
 }
 #distributer{
@@ -302,6 +303,20 @@ a:hover{
 #asideMain{
   float: right;
   margin: 1%;
+}
+#form{
+  margin: 1em;
+  line-height: 1.5; 
+}
+input {
+  
+  margin-left: 50px;
+}
+#fformFields{
+  float: left;
+}
+#formOpis{
+  float: left;
 }
 /* ----------------HOMEPAGE RESPONSIVE--------------------------------*/
 @media screen and (min-width: 960px) {

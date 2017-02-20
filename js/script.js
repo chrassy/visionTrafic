@@ -34,8 +34,32 @@ $(function(){
      else if ($(this).attr('id') == "visum") {
       $(".spremembaVsebine").load("visum.html");      
      }
+       else if ($(this).attr('id') == "visumSaftey") {
+      $(".spremembaVsebine").load("visum-safety.html");      
+     }
+     else if ($(this).attr('id') == "vissim") {
+      $(".spremembaVsebine").load("vissim.html");      
+     }
+      else if ($(this).attr('id') == "viswalk") {
+      $(".spremembaVsebine").load("viswalk.html");      
+     }
+     else if ($(this).attr('id') == "vistro") {
+      $(".spremembaVsebine").load("vistro.html");      
+     }
+     else if ($(this).attr('id') == "optima") {
+      $(".spremembaVsebine").load("optima.html");      
+     }
+      else if ($(this).attr('id') == "balance") {
+      $(".spremembaVsebine").load("balance.html");      
+     }
+     else if ($(this).attr('id') == "epics") {
+      $(".spremembaVsebine").load("epics.html");      
+     }
+     else if ($(this).attr('id') == "vistad") {
+      $(".spremembaVsebine").load("vistad.html");      
+     }
      else if ($(this).attr('id') == "dataAnalytics") {
-     	$(".spremembaVsebine").load("visum-data-analytics.html");     	
+     	$(".spremembaVsebine").load("visumDataAnalytics.html");     	
      }  
      else if ($(this).attr('id') == "trafficData") {
      	$(".spremembaVsebine").load("trafficData.html");     	
@@ -46,9 +70,9 @@ $(function(){
      else if ($(this).attr('id') == "podrzka") {
       $(".spremembaVsebine").load("podrzka.html");      
      }
-     else if ($(this).attr('id') == "viswalk") {
-      $(".spremembaVsebine").load("viswalk.html");      
-     }                  
+      else if ($(this).attr('id') == "test") {
+      $(".spremembaVsebine").load("test.html");      
+     }                      
   });
 });
 
@@ -56,27 +80,28 @@ $(function(){
 
 //mainPage links to ajax from pregled 
 $(function(){
-      
-       $("#pregled2").click();     
-       $("#pregled").click();
-       $("#pregled").css('color', "#E02129");
-       $("#visum").css('color', "#4B4A4D"); 
-
-       $("#visum2").click();     
-       $("#visum").click();
-       $("#visum").css('color', "#E02129");
-       $("#pregled").css('color', "#4B4A4D"); 
-
+    $(".vise").click(function(){
+       if ($(this).attr('id') == "proizvodi2") {
+       }
+       if ($(this).attr('id') == "visum2") {            
+        $("#visum").click();
+        $("#visum").css('color', "#E02129");
+        $("#pregled").css('color', "#4B4A4D"); 
+       }
+        if ($(this).attr('id') == "trening2") {
        $("#trening2").click();     
        $("#trening").click();
        $("#trening").css('color', "#E02129");
        $("#podrzka").css('color', "#4B4A4D"); 
-
+       }
+        if ($(this).attr('id') == "podrzka2") {
        $("#podrzka2").click();     
        $("#podrzka").click();
        $("#podrzka").css('color', "#E02129");
-       $("#trening").css('color', "#4B4A4D"); 
-
+       $("#trening").css('color', "#4B4A4D");
+       }   
+             
+   });
 });
      
     
