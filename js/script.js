@@ -88,8 +88,8 @@ $(function(){
         $("#visum").css('color', "#E02129");
         $("#pregled").css('color', "#4B4A4D"); 
        }
-        if ($(this).attr('id') == "trening2") {
-       $("#trening2").click();     
+        if ($(this).attr('id') == "trening2"){
+       $("body").load("trening-podrska.html");     
        $("#trening").click();
        $("#trening").css('color', "#E02129");
        $("#podrzka").css('color', "#4B4A4D"); 
@@ -101,10 +101,10 @@ $(function(){
        $("#trening").css('color', "#4B4A4D");
        }   
              
-   });
+   });    
 });
      
-    
+   
     
 //Obarvan trenutni podmeni in meni
 $(function() {  
